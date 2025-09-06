@@ -23,10 +23,12 @@ const Hero = () => {
               Garantindo água cristalina e segura para você e sua família.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <a href="https://drive.google.com/file/d/1MU-9GtEBhzmwDefniAGSkQ5I-4N4ohOq/view?usp=drive_link">
+              <link to ="<Link to="https://drive.google.com/file/d/1MU-9GtEBhzmwDefniAGSkQ5I-4N4ohOq/view?usp=drive_link">
+              
               <Button variant="hero" size="lg" className="text-lg px-8 py-4">
                 Conheça Nossos Planos
               </Button>
+              </Link>
               <Button variant="outline" size="lg" className="text-lg px-8 py-4 border-primary text-primary hover:bg-primary hover:text-primary-foreground">
                 Fale Direto pelo Link
               </Button>
