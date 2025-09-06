@@ -1,5 +1,4 @@
 import { Button } from "@/components/ui/button";
-import heroImage from "@/assets/hero-headphones.jpg";
 
 const Hero = () => {
   return (
@@ -8,26 +7,34 @@ const Hero = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="text-center lg:text-left">
             <h1 className="text-5xl lg:text-7xl font-bold text-foreground mb-6 leading-tight">
-              Produtos
-              <span className="bg-gradient-primary bg-clip-text text-transparent ml-4">
-                Premium
-              </span>
+              Gildecy de Jesus Sá
             </h1>
-            <p className="text-xl text-muted-foreground mb-8 max-w-lg">
-              Descubra nossa coleção exclusiva de tecnologia de ponta. 
-              Qualidade superior e design inovador em cada produto.
+            <h2 className="text-2xl lg:text-3xl font-semibold mb-4">
+              <span className="bg-gradient-primary bg-clip-text text-transparent">
+                Tratador de Piscinas
+              </span>
+            </h2>
+            <p className="text-xl text-muted-foreground mb-8 max-w-lg flex items-center">
+              📍 Açailândia - MA
             </p>
-            <Button variant="hero" size="lg" className="text-lg px-8 py-4">
-              Explorar Produtos
-            </Button>
+            <p className="text-lg text-muted-foreground mb-8 max-w-lg">
+              Especialista em manutenção e tratamento de piscinas. 
+              Garantindo água cristalina e segura para você e sua família.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4">
+              <Button variant="hero" size="lg" className="text-lg px-8 py-4">
+                Conheça Nossos Planos
+              </Button>
+              <Button variant="outline" size="lg" className="text-lg px-8 py-4 border-primary text-primary hover:bg-primary hover:text-primary-foreground">
+                Fale Direto pelo Link
+              </Button>
+            </div>
           </div>
           <div className="relative">
-            <div className="absolute inset-0 bg-gradient-primary opacity-20 rounded-3xl blur-3xl"></div>
-            <img 
-              src={heroImage} 
-              alt="Headphones premium com design moderno"
-              className="relative z-10 w-full h-auto rounded-2xl shadow-2xl"
-            />
+            <div className="absolute inset-0 bg-gradient-primary opacity-30 rounded-3xl blur-3xl animate-pulse"></div>
+            <div className="relative z-10 w-full h-96 bg-gradient-primary rounded-2xl shadow-2xl flex items-center justify-center text-6xl">
+              🏊‍♂️
+            </div>
           </div>
         </div>
       </div>

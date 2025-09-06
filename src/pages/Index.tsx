@@ -1,13 +1,17 @@
 import Hero from "@/components/Hero";
-import ProductsSection from "@/components/ProductsSection";
+import ServicesSection from "@/components/ProductsSection";
 import Footer from "@/components/Footer";
+import ParticleBackground from "@/components/ParticleBackground";
 
 const Index = () => {
   return (
-    <div className="min-h-screen">
-      <Hero />
-      <ProductsSection />
-      <Footer />
+    <div className="min-h-screen relative">
+      <ParticleBackground />
+      <div className="relative z-10">
+        <Hero />
+        <ServicesSection />
+        <Footer />
+      </div>
     </div>
   );
 };

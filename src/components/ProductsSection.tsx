@@ -1,68 +1,57 @@
-import ProductCard from "./ProductCard";
-import smartwatchImage from "@/assets/product-smartwatch.jpg";
-import smartphoneImage from "@/assets/product-smartphone.jpg";
-import earbudsImage from "@/assets/product-earbuds.jpg";
-
-const ProductsSection = () => {
-  const products = [
+const ServicesSection = () => {
+  const services = [
     {
-      title: "SmartWatch Pro",
-      price: "R$ 299,90",
-      originalPrice: "R$ 399,90",
-      image: smartwatchImage,
-      description: "Smartwatch com GPS, monitoramento cardíaco e bateria de longa duração. Perfeito para seu estilo de vida ativo.",
-      mercadoPagoUrl: "https://www.mercadopago.com.br/checkout/v1/redirect"
+      icon: "🧪",
+      title: "Análise Química",
+      description: "Análise completa da água com teste de pH, cloro, alcalinidade e outros parâmetros essenciais."
     },
     {
-      title: "Smartphone Elite",
-      price: "R$ 1.299,90",
-      originalPrice: "R$ 1.599,90",
-      image: smartphoneImage,
-      description: "Smartphone premium com câmera de 108MP, processador octa-core e 256GB de armazenamento interno.",
-      mercadoPagoUrl: "https://www.mercadopago.com.br/checkout/v1/redirect"
+      icon: "🧹",
+      title: "Limpeza Profunda",
+      description: "Limpeza completa da piscina, incluindo paredes, fundo, filtros e sistema de circulação."
     },
     {
-      title: "AirBuds Ultra",
-      price: "R$ 199,90",
-      originalPrice: "R$ 299,90",
-      image: earbudsImage,
-      description: "Fones sem fio com cancelamento de ruído ativo, som Hi-Fi e até 30h de bateria com o estojo.",
-      mercadoPagoUrl: "https://www.mercadopago.com.br/checkout/v1/redirect"
+      icon: "⚡",
+      title: "Manutenção Preventiva",
+      description: "Manutenção regular dos equipamentos para garantir o funcionamento perfeito da sua piscina."
     }
   ];
 
   return (
-    <section className="py-20 bg-background">
+    <section className="py-20 bg-background/50 backdrop-blur-sm">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-4">
-            Produtos em 
+            Nossos 
             <span className="bg-gradient-primary bg-clip-text text-transparent ml-2">
-              Destaque
+              Serviços
             </span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Selecionamos os melhores produtos com tecnologia de ponta e preços especiais para você.
+            Oferecemos serviços completos para manter sua piscina sempre limpa, segura e pronta para uso.
           </p>
         </div>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {products.map((product, index) => (
-            <ProductCard
+          {services.map((service, index) => (
+            <div
               key={index}
-              title={product.title}
-              price={product.price}
-              originalPrice={product.originalPrice}
-              image={product.image}
-              description={product.description}
-              mercadoPagoUrl={product.mercadoPagoUrl}
-            />
+              className="bg-card/80 backdrop-blur-sm p-8 rounded-2xl shadow-card hover:shadow-card-hover transition-all duration-300 border border-primary/20"
+            >
+              <div className="text-6xl mb-6 text-center">{service.icon}</div>
+              <h3 className="text-2xl font-bold text-foreground mb-4 text-center">
+                {service.title}
+              </h3>
+              <p className="text-muted-foreground text-center leading-relaxed">
+                {service.description}
+              </p>
+            </div>
           ))}
         </div>
         
         <div className="text-center mt-16">
           <p className="text-muted-foreground mb-6">
-            Pagamento seguro via MercadoPago • Entrega rápida • Garantia estendida
+            Atendimento em Açailândia e região • Orçamento gratuito • Profissional qualificado
           </p>
         </div>
       </div>
@@ -70,4 +59,4 @@ const ProductsSection = () => {
   );
 };
 
-export default ProductsSection;
+export default ServicesSection;
