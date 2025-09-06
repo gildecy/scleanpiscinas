@@ -16,7 +16,8 @@ const Hero = () => {
               </span>
             </h2>
             <p className="text-xl text-muted-foreground mb-8 max-w-lg flex items-center">
-              📍 Açailândia - MA
+              📍 Açailândia - MA  desenvolvido por Gildecy
+
             </p>
             <p className="text-lg text-muted-foreground mb-8 max-w-lg">
               Especialista em manutenção e tratamento de piscinas. 
