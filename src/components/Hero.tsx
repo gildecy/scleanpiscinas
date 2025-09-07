@@ -8,7 +8,7 @@ const Hero = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="text-center lg:text-left">
             <h1 className="text-5xl lg:text-7xl font-bold text-foreground mb-6 leading-tight">
-              Gildecy de Jesus Sá
+              Sclean Piscinas
             </h1>
             <h2 className="text-2xl lg:text-3xl font-semibold mb-4">
               <span className="bg-gradient-primary bg-clip-text text-transparent">
