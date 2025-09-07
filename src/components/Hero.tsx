@@ -30,7 +30,7 @@ const Hero = () => {
                 Conheça Nossos Planos
               </Button>
                 </a>
-              <a "https://api.whatsapp.com/send/?phone=5599992177280&text&type=phone_number&app_absent=0">
+              <a  href="https://api.whatsapp.com/send/?phone=5599992177280&text&type=phone_number&app_absent=0">
               <Button variant="outline" size="lg" className="text-lg px-8 py-4 border-primary text-primary hover:bg-primary hover:text-primary-foreground">
                 Fale Direto pelo Link
               </Button>
